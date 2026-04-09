@@ -1,0 +1,24 @@
+# ROSI-TRANS Przeprowadzki Opole
+# https://rosi-trans.pl
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rosi-trans.pl/sitemap.xml
+
+# Disallow admin and private paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+# Allow important resources
+Allow: /images/
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
