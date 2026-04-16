@@ -1,23 +1,23 @@
-import Image from "next/image"
-import { Check, Shield, Clock, Banknote } from "lucide-react"
+import Image from "next/image";
+import { Check, Shield, Clock, Banknote } from "lucide-react";
 
 const benefits = [
   {
     icon: Shield,
     title: "Bezpieczeństwo",
-    description: "Pasy zabezpieczające ładunek i profesjonalny sprzęt"
+    description: "Pasy zabezpieczające ładunek i profesjonalny sprzęt",
   },
   {
     icon: Clock,
     title: "Punktualność",
-    description: "Na miejsce, na czas, na pewno - to nasze motto"
+    description: "Na miejsce, na czas, na pewno - to nasze motto",
   },
   {
     icon: Banknote,
     title: "Atrakcyjne ceny",
-    description: "Ceny ustalane indywidualnie dla każdego klienta"
-  }
-]
+    description: "Ceny ustalane indywidualnie dla każdego klienta",
+  },
+];
 
 const features = [
   "Pięciometrowy kontener z windą załadowczo-wyładowczą",
@@ -25,8 +25,8 @@ const features = [
   "Pasy zabezpieczające ładunek",
   "Wieloletnie doświadczenie w transporcie",
   "Ubezpieczenie przewożonych towarów",
-  "Obsługa firm i klientów indywidualnych"
-]
+  "Obsługa firm i klientów indywidualnych",
+];
 
 export function About() {
   return (
@@ -63,15 +63,21 @@ export function About() {
 
           {/* Content */}
           <div>
-            <span className="text-sm font-medium text-primary uppercase tracking-wider">O firmie</span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-foreground" style={{ fontFamily: 'var(--font-heading)' }}>
+            <h2
+              className="mt-3 text-3xl sm:text-4xl font-bold text-foreground"
+              style={{ fontFamily: "var(--font-heading)" }}
+            >
               Dlaczego ROSI-TRANS?
             </h2>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-              Jesteśmy firmą transportową z wieloletnim doświadczeniem. Specjalizujemy się w przeprowadzkach mieszkań, biur, sklepów i magazynów na terenie Opola i okolic.
+              Jesteśmy firmą transportową z wieloletnim doświadczeniem.
+              Specjalizujemy się w przeprowadzkach mieszkań, biur, sklepów i
+              magazynów na terenie Opola i okolic.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Nasza flota wyposażona jest w nowoczesne samochody z windą załadowczo-wyładowczą, co pozwala na bezpieczny transport nawet najcięższych przedmiotów.
+              Nasza flota wyposażona jest w nowoczesne samochody z windą
+              załadowczo-wyładowczą, co pozwala na bezpieczny transport nawet
+              najcięższych przedmiotów.
             </p>
 
             {/* Benefits */}
@@ -81,8 +87,12 @@ export function About() {
                   <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-3 mx-auto sm:mx-0">
                     <benefit.icon className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground">{benefit.title}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{benefit.description}</p>
+                  <h3 className="font-semibold text-foreground">
+                    {benefit.title}
+                  </h3>
+                  <p className="mt-1 text-sm text-muted-foreground">
+                    {benefit.description}
+                  </p>
                 </div>
               ))}
             </div>
@@ -94,7 +104,9 @@ export function About() {
                   <div className="flex-shrink-0 w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center mt-0.5">
                     <Check className="w-3 h-3 text-primary" />
                   </div>
-                  <span className="text-sm text-muted-foreground">{feature}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {feature}
+                  </span>
                 </div>
               ))}
             </div>
@@ -102,5 +114,5 @@ export function About() {
         </div>
       </div>
     </section>
-  )
+  );
 }
